@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>People App</title>
+
+    <style>
+        .people>div {
+            display: inline-block;
+            width: 20%
+        }
+
+        #records>div>div {
+            display: inline-block;
+            width: 20%
+        }
+
+        #records1>div>div {
+            display: inline-block;
+            width: 20%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <input id="inputName" placeholder="Imię nielubianej osoby w infoshare" />
+        </div>
+        <div>
+            <input id="inputSurname" placeholder="Nazwisko nielubianej osoby w infoshare" />
+        </div>
+        <div>
+            <input id="inputAge" placeholder="Wiek nielubianej osoby w infoshare" />
+        </div>
+        <div>
+            <input id="inputRole" placeholder="Funkcja nielubianej osoby w infoshare" />
+        </div>
+        <button id="addButton">Dodaj do czarnej listy</button>
+    </div>
+    <hr />
+    <div class="container">
+        <div class="people">
+            <div class="people__name people__name--head">
+                Imię
+            </div>
+            <div class="people__surname people__surname--head">
+                Nazwisko
+            </div>
+            <div class="people__age people__age--head">
+                Wiek
+            </div>
+            <div class="people__role people__role--head">
+                Funkcja
+            </div>
+        </div>
+        <div id="records">
+        </div>
+    </div>
+    <hr />
+    <hr />
+    <hr />
+    <div class="container">
+        <div>
+            <input id="inputName1" placeholder="Imię lubianej osoby w infoshare" />
+        </div>
+        <div>
+            <input id="inputSurname1" placeholder="Nazwisko lubianej osoby w infoshare" />
+        </div>
+        <div>
+            <input id="inputAge1" placeholder="Wiek lubianej osoby w infoshare" />
+        </div>
+        <div>
+            <input id="inputRole1" placeholder="Funkcja lubianej osoby w infoshare" />
+        </div>
+        <button id="addButton1">Dodaj do białej listy</button>
+    </div>
+    <hr />
+    <div class="container">
+        <div class="people">
+            <div class="people__name people__name--head">
+                Imię
+            </div>
+            <div class="people__surname people__surname--head">
+                Nazwisko
+            </div>
+            <div class="people__age people__age--head">
+                Wiek
+            </div>
+            <div class="people__role people__role--head">
+                Funkcja
+            </div>
+        </div>
+        <div id="records1">
+        </div>
+    </div>
+    <script src="index2.js"></script>
+</body>
+
+</html>

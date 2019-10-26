@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #000;
+    position: relative;
+    margin: 0 auto;
+}
+
+.counter {
+    display: block;
+    position: absolute;
+    background: coral;
+    width: 25px;
+    height: 25px;
+    left: 25px;
+    top: 25px;
+    z-index: 1;
+}
+
+h1 {
+
+    text-align: center;
+    margin: 20px auto;
+}
