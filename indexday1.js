@@ -68,13 +68,13 @@ class Render {
 
     static renderText(arrayType, nameOfDiv) {
 
-        const o_cont = document.querySelector(nameOfDiv);
-        let o_html = '';
+        const object_cont = document.querySelector(nameOfDiv);
+        let object_html = '';
         arrayType.map((element) => {
-            o_html += `<div><div>${element.name}</div><div>${element.adress}</div><div>${element.id}</div><div>${element.age}</div><div>${element.role}</div></div>`;
+            object_html += `<div><div>${element.name}</div><div>${element.adress}</div><div>${element.id}</div><div>${element.age}</div><div>${element.role}</div></div>`;
         });
 
-        o_cont.innerHTML = o_html;
+        object_cont.innerHTML = object_html;
     }
 }
 
