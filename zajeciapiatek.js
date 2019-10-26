@@ -27,9 +27,9 @@ class Information {
     };
 
 
-    set accountNumber(newParam) {
+    set accountNumber(newAccountNumber) {
 
-        this._accountNumber = newParam;
+        this._accountNumber = newAccountNumber;
 
     };
 
@@ -47,7 +47,7 @@ class Render {
 
             // metoda laczenia zmiennych z kawalkami napisow : ``
             
-            element.innerHTML += `<div>Imię: ${currentElement.fullName}   || Numer konta: ${currentElement.accountNumber}</div>`
+            element.innerHTML += `<div>Imię: ${currentElement.fullName} || Numer konta: ${currentElement.accountNumber}</div>`
 
         })
     }
@@ -66,3 +66,8 @@ var peopleList = [
 //uruchomienie poprzez podanie nazwy klasy i parametrow 
 
 Render.renderList(peopleList, 'list');
+
+
+// chce miec dostep do Account Number, to:
+// peopleList[2].accountNumber (bez zadnego get)
+// a gdy chce utworzyc nowa wartosc, to podaje argument w nawiasie

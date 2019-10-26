@@ -8,7 +8,8 @@ class Person {
 
     }
 
-    //metoda jest dostepna w klasie, wiec jak dziedziczy to razem z metoda - mimo ze nie jest w konstruktorze, to nie ma to znaczenia - jest w klasie!
+    //metoda jest dostepna w klasie, wiec jak dziedziczy to razem z metoda 
+    // mimo ze nie jest w konstruktorze, to nie ma to znaczenia - jest w klasie!
     // metody robię poza konstruktorem!
 
     changeId(newId) {
@@ -71,7 +72,7 @@ class Render {
         const object_cont = document.querySelector(nameOfDiv);
         let object_html = '';
         arrayType.map((element) => {
-            object_html += `<div><div>${element.name}</div><div>${element.adress}</div><div>${element.id}</div><div>${element.age}</div><div>${element.role}</div></div>`;
+            object_html += `<div><div>${element.name}</div><div>${element.adress}</div><div>${element.id}</div><div>${element.age}</div><div>${element.role}</div><div>${element.displayFullInfo()}</div></div>`;
         });
 
         object_cont.innerHTML = object_html;
